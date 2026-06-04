@@ -1,1 +1,3 @@
 # PowerQuarry-BLE-Handler
+
+The LiPO4 battery from the manufacturer Shentec can be monitored using the "Power Quarry" Bluetooth app, which is available from the Google and Apple app stores. In addition to the individual cell voltages, the app also displays the current state of charge (SoC) and battery current. This project demonstrates how the information from the battery can be read in ESPHome using the BLE module. As the battery can only connect to one BLE device at a time, the connection is disconnected after the data has been read, so that the app can continue to be used in parallel. In principle, however, a permanent connection to the ESP is also possible.
